@@ -1,0 +1,29 @@
+import {StyleSheet} from "react-native";
+
+export const styles = StyleSheet.create({
+    container:{
+        backgroundColor: '#fff',
+        padding: 16,
+        margin: 8,
+        borderRadius: 8,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+    },
+    propertyContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: 4,
+    },
+    propertyLabel: {
+        fontWeight: 'bold',
+        marginRight: 8,
+        color: '#333',
+    },
+    propertyValue: {
+        color: '#666',
+    },
+
+})

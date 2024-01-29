@@ -1,79 +1,47 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# Description 
+I created an app with three tabs and a screen to display character information. I used the context as a state manager because it was faster and easier in my opinion, considering that it is not a large application. I use AsyncStotage to simulate working with a database. Unfortunately, in the returned data from SWAPI, I did not find unique identifiers for characters, so I store all information about the character in AsyncStorage. On the Home tab, you can view available information about characters and add them to your favorite list, I also added the ability to sort characters by gender and the ability to see the total number of characters by gender. On the Favorites tab, you can view your favorite characters, sort them by gender, view the total number by gender, and delete them from the list. On a separate screen for each character, I added the ability to upload all available information about it and view it.
+In the settings tab I added an option to enter my name and reset to default settings.
+
+
+IMPORTANTLY!! I didn't have time to adjust the icons so they don't display correctly.
+The name and all characters added to the list will be saved even after restarting the application
+
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Node and NPM Installation
 
-## Step 1: Start the Metro Server
+Our project requires Node.js (version > 18) and NPM. If you don't have Node.js installed, you can install it using the following steps:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+1. Install Node.js and NPM following the official installation guide for your operating system.
+2. Alternatively, you can use Node Version Manager (NVM) for Node.js installation.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## CocoaPods Installation
 
+CocoaPods is required for iOS development. Follow these steps to install CocoaPods:
+
+1. Open Terminal and run the command: `sudo gem install cocoapods`.
+2. To verify the installation, run: `pod --version`.
+
+## Android Emulator
+
+1. For use Android Emulator you need to set up your IntelliJ IDEA or Android Studio
+
+
+## iOS Setup
+
+To set up the iOS project for development, follow these steps:
+
+1. Open your terminal and navigate to the `ios` directory within the project:
+2. Install CocoaPods dependencies by running the following command:
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+pod install
 ```
 
-## Step 2: Start your Application
+This will install all the required libraries and dependencies specified in the `Podfile`.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
