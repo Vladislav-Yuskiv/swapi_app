@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
         flex: 1
     },
     title: {
+        fontFamily:"Roboto",
         fontSize: 22,
         fontWeight: "bold",
     },
@@ -17,11 +18,13 @@ export const styles = StyleSheet.create({
         marginBottom: 4,
     },
     propertyLabel: {
+        fontFamily:"Roboto",
         fontWeight: 'bold',
         marginRight: 8,
         color: '#333',
     },
     propertyValue: {
+        fontFamily:"Roboto",
         color: '#666',
     },
     propertyWrapper: {

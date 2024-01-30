@@ -18,9 +18,11 @@ export const styles = StyleSheet.create({
         margin: 10
     },
     infoSectionTitle: {
+        fontFamily:"Roboto",
         fontSize: 18
     },
     infoSectionValue: {
+        fontFamily:"Roboto",
         marginLeft: 10,
         fontSize: 18,
         fontWeight: "bold"

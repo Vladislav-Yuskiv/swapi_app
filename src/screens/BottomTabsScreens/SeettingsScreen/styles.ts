@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
         alignItems:"center"
     },
     userNameText: {
+        fontFamily:"Roboto",
         textAlign: "center",
         fontSize: 22,
         fontWeight:"bold",

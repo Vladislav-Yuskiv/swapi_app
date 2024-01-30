@@ -17,6 +17,7 @@ export const styles = StyleSheet.create({
         height: 130
     },
     name: {
+        fontFamily:"Roboto",
         fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 8,
@@ -27,11 +28,13 @@ export const styles = StyleSheet.create({
         marginBottom: 4,
     },
     propertyLabel: {
+        fontFamily:"Roboto",
         fontWeight: 'bold',
         marginRight: 8,
         color: '#333',
     },
     propertyValue: {
+        fontFamily:"Roboto",
         color: '#666',
     },
     isFavouritesWrapper:{
@@ -40,6 +43,7 @@ export const styles = StyleSheet.create({
         width: "40%"
     },
     isFavouritesText: {
+        fontFamily:"Roboto",
        fontStyle: "italic",
        fontWeight: "bold",
        textAlign:"center",

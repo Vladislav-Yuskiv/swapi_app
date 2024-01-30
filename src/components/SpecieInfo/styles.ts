@@ -20,9 +20,11 @@ export const styles = StyleSheet.create({
     propertyLabel: {
         fontWeight: 'bold',
         marginRight: 8,
+        fontFamily:"Roboto",
         color: '#333',
     },
     propertyValue: {
+        fontFamily:"Roboto",
         color: '#666',
     },
 

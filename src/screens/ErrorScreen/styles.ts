@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 20,
     },
     errorText: {
+        fontFamily:"Roboto",
         textAlign: "center",
         fontWeight:"bold",
         fontSize: 18
